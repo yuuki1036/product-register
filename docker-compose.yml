@@ -10,9 +10,6 @@ services:
       - '3000:3000'
     volumes:
       - '.:/product-register'
-    environment:
-      - 'POSTGRES_USER=postgres'
-      - 'POSTGRES_PASSWORD=postgres'
     tty: true
     stdin_open: true
     depends_on:
